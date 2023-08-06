@@ -5,14 +5,14 @@
 
 ## Read in the generated *.pqr file
 read
-mol pqr 1UBQ.pqr
+mol pqr 2k6d_A.pqr
 end
 
 elec name viz
 mg-manual               ## manually-configured multigrid Poisson-Boltzmann calculations
-dime 129 129 129        ## Specifies the number of grid points per processor for grid-based discretization
+dime 65 65 65        ## Specifies the number of grid points per processor for grid-based discretization
 ## nlev (default 4)     ## n = c * 2 exp(l + 1) + 1, n is dime argument, l is the nlev value
-grid 1.0 1.0 1.0        ## Specify the mesh grid spacings for multigrid mg-manual calculations
+grid 2.0 2.0 2.0        ## Specify the mesh grid spacings for multigrid mg-manual calculations
 gcent  mol 1            ## Specify the center of the grid based on a molecule's center or absolute coordinates
 mol 1                   ## Specify the molecule for which the PBE is to be solved
 lpbe                    ## Specifies that the linearized Poisson-Boltzmann equation should be solved
@@ -26,9 +26,9 @@ srfm smol               ## The dielectric and ion-accessibility coefficients are
 srad 0.0                ## Specify the radius of the solvent molecules
 swin 0.3                ## Specify the size of the support (i.e., the rate of change)
 temp 298.15             ## Specify the temperature for the Poisson-Boltzmann calculation
-write ivdw dx 1ubq.excl   ## Write out the inflated van der Waals-based ion accessibility in UHBD format
-write pot dx 1ubq.apbs    ## Write out the electrostatic potential in units of kb T ec-1 in UHBD format
-write pot uhbd 1ubq.apbs
+write ivdw dx 2k6d_a.excl   ## Write out the inflated van der Waals-based ion accessibility in UHBD format
+write pot dx 2k6d_a.apbs    ## Write out the electrostatic potential in units of kb T ec-1 in UHBD format
+write pot uhbd 2k6d_a.apbs
 end
  
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
