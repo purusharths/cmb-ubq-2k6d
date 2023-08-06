@@ -36,32 +36,32 @@ end
 #! assignments and elec calculations for protein 2
 #!
  
-##read
-##mol pqr .pqr
-##end
-## 
-##elec name viz
-##mg-manual
-##dime 129 129 129
-#### nlev 4
-##grid 1.0 1.0 1.0
-##gcent  mol 2
-##mol 2
-##lpbe
-##bcfl mdh
-##ion charge 1 conc 0.100 radius 1.500
-##ion charge -1 conc 0.100 radius 1.500
-##pdie 4.0
-##sdie 78.00
-##chgm spl0
-##srfm smol
-##srad 0.0
-##swin 0.3
-##temp 298.15
-##write ivdw dx barstar.excl
-##write pot dx barstar.apbs
-##write pot uhbd barstar.apbs
-##end
+read
+mol pqr .pqr
+end
+ 
+elec name viz
+mg-manual
+dime 129 129 129
+## nlev 4
+grid 1.0 1.0 1.0
+gcent  mol 2
+mol 2
+lpbe
+bcfl mdh
+ion charge 1 conc 0.100 radius 1.500
+ion charge -1 conc 0.100 radius 1.500
+pdie 4.0
+sdie 78.00
+chgm spl0
+srfm smol
+srad 0.0
+swin 0.3
+temp 298.15
+write ivdw dx barstar.excl
+write pot dx barstar.apbs
+write pot uhbd barstar.apbs
+end
  
 quit
  
