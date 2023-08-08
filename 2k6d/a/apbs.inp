@@ -29,7 +29,6 @@ temp 298                ## Specify the temperature for the Poisson-Boltzmann cal
 write ivdw dx 2k6d_a.excl   ## Write out the inflated van der Waals-based ion accessibility in UHBD format
 write pot dx 2k6d_a.apbs    ## Write out the electrostatic potential in units of kb T ec-1 in UHBD format
 write pot uhbd 2k6d_a.apbs
-press 1.621e-10
 end
  
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
