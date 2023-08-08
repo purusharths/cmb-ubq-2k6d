@@ -17,15 +17,15 @@ gcent  mol 1            ## Specify the center of the grid based on a molecule's 
 mol 1                   ## Specify the molecule for which the PBE is to be solved
 lpbe                    ## Specifies that the linearized Poisson-Boltzmann equation should be solved
 bcfl mdh                ## "Single Debye-Hückel" boundary condition
-ion charge 1 conc 0.100 radius 1.500      ## Specify the bulk concentrations of mobile ions
-ion charge -1 conc 0.100 radius 1.500      ## ion charge {charge} conc {conc} radius {radius}
+ion charge 1 conc 0.150 radius 1.500      ## Specify the bulk concentrations of mobile ions
+ion charge -1 conc 0.150 radius 1.500      ## ion charge {charge} conc {conc} radius {radius}
 pdie 4.0                ## Specify the dielectric constant of the biomolecule
 sdie 78.00              ## Specify the dielectric constant of the solvent (water: 78-80)
 chgm spl0               ## Traditional trilinear interpolation (linear splines).
 srfm smol               ## The dielectric and ion-accessibility coefficients are defined as for mol
 srad 0.0                ## Specify the radius of the solvent molecules
 swin 0.3                ## Specify the size of the support (i.e., the rate of change)
-temp 298.15             ## Specify the temperature for the Poisson-Boltzmann calculation
+temp 298                ## Specify the temperature for the Poisson-Boltzmann calculation
 write ivdw dx 2k6d_b.excl   ## Write out the inflated van der Waals-based ion accessibility in UHBD format
 write pot dx 2k6d_b.apbs    ## Write out the electrostatic potential in units of kb T ec-1 in UHBD format
 write pot uhbd 2k6d_b.apbs

@@ -81,7 +81,7 @@ Preparing to run 1 PBE calculations.
 CALCULATION #1 (viz): MULTIGRID
   Setting up problem...
   Vpbe_ctor:  Using max ion radius (1.5 A) for exclusion function
-  Debye length:  9.58919 A
+  Debye length:  7.82757 A
   Current memory usage:  88.626 MB total, 88.626 MB high water
   Using linear spline charge discretization.
   Grid dimensions: 65 x 65 x 65
@@ -92,14 +92,14 @@ CALCULATION #1 (viz): MULTIGRID
   Molecule ID: 1
   Linearized traditional PBE
   Multiple Debye-Huckel sphere boundary conditions
-  2 ion species (0.100 M ionic strength):
-    1.500 A-radius, 1.000 e-charge, 0.100 M concentration
-    1.500 A-radius, -1.000 e-charge, 0.100 M concentration
+  2 ion species (0.150 M ionic strength):
+    1.500 A-radius, 1.000 e-charge, 0.150 M concentration
+    1.500 A-radius, -1.000 e-charge, 0.150 M concentration
   Solute dielectric: 4.000
   Solvent dielectric: 78.000
   Using "molecular" surface definition;harmonic average smoothing
   Solvent probe radius: 0.000 A
-  Temperature:  298.150 K
+  Temperature:  298.000 K
   Ion accessibility to be written to 2k6d_b.excl.dx
   Potential to be written to 2k6d_b.apbs.dx
   Potential to be written to 2k6d_b.apbs.grd
